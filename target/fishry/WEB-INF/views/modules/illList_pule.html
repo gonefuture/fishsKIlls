@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>病防检疫</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/color.css">
+<link rel="stylesheet" href="css/money.css">
+<link rel="stylesheet" href="css/infoSaied.css">
+</head>
+<body  onload="findFastInfoList(1)">
+<div class="content">
+<div class="logo">
+    <div class="myIcon"><span class="login1"><span class="login2"></span></span></div>
+    <h2>我们的渔技网</h2>
+    <h3>www.zhkugg.com</h3>
+</div>
+<div class="handler">
+    <ul>
+        <li><a href="index">网站首页</a></li>
+        <li><a href="#">广州渔业</a></li>
+        <li><a href="#">政务公开</a></li>
+        <li><a href="fastInfo_local.html">信息快递</a></li>
+        <li><a href="infoSaied.html">通知公告</a></li>
+        <li><a href="money.html">水产行情</a></li>
+        <li><a href="netInfo.html">站务信息</a></li>
+        <li><a href="needInfo.html">供求信息</a></li>
+        <li><a href="tech_breed.html">科技推广</a></li>
+        <li><a href="#">病防质检</a></li>
+        <li><a href="#">渔乐天堂</a></li>
+        <li><a href="#">休闲渔业</a></li>
+    </ul>
+</div>
+<div class="find">
+    <h4>本站搜索：</h4><p>关键字</p><input type="text" placeholder="键入关键词"><select><option>全站搜索</option></select>
+    <button class="btn blue">搜索</button>
+</div>
+<div class="newsFields">
+<div class="left">
+    <div class="leftMoney">
+        <div class="head"style="height:45px">
+            <div class="myIcon"style="margin-top:-0.2%"><span class="icon8"></span></div>
+            <h2 style="margin-top:1.3%">病防检疫</h2>
+        </div>   
+        <div class="leftMoneyBottom">
+            <ul class="pointer">
+                <li class="duck"><a href="illList_report.html">病害测报</a></li>
+                <li class="duck"><a href="illList_protect.html">病害防治</a></li>
+                <li class="duck"><a href="illList_standard.html">质量标准</a></li>
+                <li style="background:#1A7719"><a href="">规范用药</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftCheck">
+        <div class="head"style="height:45px">
+            <div class="myIcon"style="margin-top:-0.2%"><span class="icon5"></span></div>
+            <h2 style="margin-top:1.3%">全网搜索</h2>
+        </div>   
+        <div class="leftCheckBottom">
+            <span style="margin-top:20px;margin-left:7px;font-size:15px">关键字：</span><input type="text" placeholder="关键词" style="margin-top:20px;margin-left:30px"><br>
+            <select style="width:150px;margin-left:75px;margin-top:20px"><option>有待更新</option></select><br>
+            <button class=" btn yellowGreen"style="width:60px;height:28px;margin-top:20px;margin-left:46px;" onclick="">查询</button>
+            <button class=" btn gray"style="width:60px;height:28px" >重设</button>
+        </div>
+    </div>
+</div>
+<div class="right">
+    <div class="head"style="height:45px">
+            <div class="myIcon"style="margin-top:-0.2%"><span class="icon8"></span></div>
+            <h2 style="margin-top:0.8%">规范用药</h2>
+            <a style="margin-left:40%;">当前位置：</a>
+            <a href="index">首页&nbsp&gt</a>
+            <a id="path1" href="">病防检疫&nbsp&gt</a>
+            <a id="path2" href="">规范用药</a>
+    </div>   
+    <div class="rightTable">
+         <table border="1">
+           
+        </table>
+        
+    </div>
+    <div class="pageDiv">
+            <span id="nowP" style="margin-left:-50px"></span><span id="tp"></span>
+            <button class="btn btn-s blue" onclick="forePage()">上一页</button><button class="btn btn-s blue" onclick="nextPage()">下一页</button>
+            <span>跳转至</span><input id="jeepPage" type="text" placeholder="页数" style="width:100px;"><span>页</span>
+            <button class="btn btn-s blue" id="jeep"> 跳转</button>
+    </div>
+</div>
+<div class="foot"><a href="#">关于我们</a><a href="#">后台登陆</a></div>
+<h5 style="color:#333;margin-top:20px;float:left;margin-left:46.5%">--版权&reg叶超小分队--</h5>
+</div>
+</div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/illList_pule.js"></script>
+<script src="js/prefixfree.min.js" ></script>
+</html>

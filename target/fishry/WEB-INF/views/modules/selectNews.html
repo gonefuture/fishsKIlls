@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>新闻搜索页面</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/color.css">
+<link rel="stylesheet" href="css/money.css">
+</head>
+<body>
+<div class="content">
+<div class="logo">
+    <div class="myIcon"><span class="login1"><span class="login2"></span></span></div>
+    <h2>我们的渔技网</h2>
+    <h3>www.zhkugg.com</h3>
+</div>
+<div class="handler">
+    <ul>
+        <li><a href="index">网站首页</a></li>
+        <li><a href="gdFish.html?pic=1111">广东渔业</a></li>
+        <li><a href="#">政务公开</a></li>
+        <li><a href="fastInfo_local.html" target="blank">信息快递</a></li>
+        <li><a href="infoSaied.html" target="blank">通知公告</a></li>
+        <li><a href="money.html" target="blank">水产行情</a></li>
+        <li><a href="fishHarvest.html" target="blank">站务信息</a></li>
+        <li><a href="needInfo.html" target="blank">供求信息</a></li>
+        <li><a href="tech_breed.html" target="blank">科技推广</a></li>
+        <li><a href="illList_report.html" target="blank">病防质检</a></li>
+        <li><a href="#">渔乐天堂</a></li>
+        <li><a href="#">休闲渔业</a></li>
+    </ul>
+</div>
+
+<div class="find">
+    <h4>本站搜索：</h4><p>关键字</p><input id="key" type="text" placeholder="键入关键词" >
+    <select >
+                <option value="1311">本地快讯</option>
+                <option value="1312">本省快讯</option>
+                <option value="1313">国内快讯</option>
+                <option value="1314">国际快讯</option>
+                <option value="1400">通知公告</option>
+                <option value="1811">养殖技术</option>
+                <option value="1812">水产饲料</option>
+                <option value="1813">捕捞与运输技术</option>
+                <option value="1814">加工技术</option>
+                <option value="1815">水质调控技术</option>
+                <option value="1911">病害测报</option>
+                <option value="1912">病害防治</option>
+                <option value="1913">质量标准</option>
+                <option value="1914">规范用药</option>
+                <option value="2011">瑞宝钓鱼场</option>
+                <option value="2012">七号钓虾场</option>
+                <option value="2013">沙园钓虾场</option>
+                <option value="2014">韩式钓虾场</option>
+                <option value="2015">快活林钓虾场</option>
+                <option value="2016">景业垂钓基地</option>
+                <option value="2017">喜番茄钓虾</option>
+                <option value="2111">美食保健</option>
+                <option value="2112">水族馆</option>
+                <option value="2113">观赏鱼</option>
+                <option value="2114">休闲垂钓</option>
+                <option value="2115">奇闻逸事</option>
+    </select>
+    <button class="btn blue" onclick="sendSelect()">搜索</button>
+</div>
+<div class="newsFields">
+    <table >
+        <caption>搜索结果</caption>
+        <tr>
+            <th></th>
+            <th>标题</th>
+            <th>发布时间</th>
+        </tr>
+
+    </table>
+</div>
+<div class="foot"><a href="#">关于我们</a><a href="#">后台登陆</a></div>
+<h5 style="color:#333;margin-top:20px;float:left;margin-left:46.5%">--版权&reg叶超小分队--</h5>
+</div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/select.js" ></script>
+</html>

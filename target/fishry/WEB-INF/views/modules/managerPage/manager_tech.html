@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>后台管理页面</title>
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/color.css">
+<link rel="stylesheet" href="css/manager.css">
+
+</head>
+<body  onload="findFastInfoList(1,1811)">
+
+<div class="content">
+<div class="logo">
+    <div class="myIcon"><span class="login1"><span class="login2"></span></span></div>
+    <h2>渔技网后台管理</h2>
+    <h3>www.zhkuGGManager.com</h3>
+</div>
+<div class="handler">
+    <ul>
+        <li><a href="../index">网站首页</a></li>
+        <li><a href="#">广州渔业</a></li>
+        <li><a href="#">政务公开</a></li>
+        <li><a href="../fastInfo_local.html">信息快递</a></li>
+        <li><a href="../infoSaied.html">通知公告</a></li>
+        <li><a href="../money.html">水产行情</a></li>
+        <li><a href="../netInfo.html">站务信息</a></li>
+        <li><a href="../needInfo.html">供求信息</a></li>
+        <li><a href="../tech_breed.html">科技推广</a></li>
+        <li><a href="#">病防质检</a></li>
+        <li><a href="#">渔乐天堂</a></li>
+        <li><a href="#">休闲渔业</a></li>
+    </ul>
+</div>
+<div class="find"> 
+    <h4 style="margin-left:68%">管理员：</h4><p id="adminid">叶超小分队</p>
+</div>
+<div class="newsFields">
+<div class="left">
+    <div class="leftMoney">
+        <div class="head"style="height:45px">
+            <div class="myIcon"style="margin-top:-0.2%"><span class="icon3"></span></div>
+            <h2 style="margin-top:1.3%">管理菜单</h2>
+        </div>   
+       <div class="leftMoneyBottom">
+           <ul>
+               <li><a href="" style="background:#0ccece;color:#fff">可选菜单</a></li>
+               <li><a href="manager_money.html">水产行情管理</a></li>
+               <li><a href="manager_information.html">供求信息管理</a></li>
+               <li><a href="manager_news.html">信息快讯管理</a></li>
+               <li><a href="manager_ill.html">病防检疫管理</a></li>
+               <li><a href="manager_infoSaied.html">通知公告管理</a></li>
+               <li><a href="manager_tech.html"style="background:#f0f0f0">科技推广管理</a></li>
+               <li><a href="manager_happy.html">渔乐天堂管理</a></li>
+               <li><a href="manager_relax.html">休闲渔业管理</a></li>
+               <li><a href="manager_question.html">问题回答/提问管理</a></li>
+               <li><a href="manager_netInfo.html">站务平台管理</a></li>
+           </ul>
+        </div>
+    </div>
+</div>
+    
+
+<div class="right">
+    <div class="head"style="height:45px">
+            <div class="myIcon"style="margin-top:-0.2%"><span class="icon9"></span></div>
+            <h2 style="margin-top:0.8%">后台管理</h2>
+            <a style="margin-left:33%;">当前位置：</a>
+            <a href="">后台&nbsp&gt</a>
+            <a id="path1" href="">科技推广管理&nbsp&gt</a>
+            <a id="path2" href=""></a>
+    </div>   
+    <div class="rightTable">
+    <span style="margin-left:65%;">操作选项：</span>
+       <select onchange="checkOption()">
+            <option value="1811">养殖技术</option>
+            <option value="1812">水产饲料</option>
+            <option value="1813">捕捞与运输技术</option>
+            <option value="1814">加工技术</option>
+            <option value="1815">水质调控技术</option>
+            <!--option value="1400">通知公告</option>
+            <option value="1911">病害测报</option>
+            <option value="1912">病害防治</option>
+            <option value="1913">质量标准</option>
+            <option value="1914">规范用药</option>
+            <option value="1811">养殖技术</option>
+            <option value="1812">水产饲料</option>
+            <option value="1813">捕捞与运输技术</option>
+            <option value="1814">加工技术</option>
+            <option value="1815">水质调控技术</option-->
+        </select>
+        <button class="btn lowBlue" style="width:50px;height:28px;margin-left:2%;"onclick="addNews()">新增</button>
+        <table border="1">
+            <tr>
+                <th>标题</th>
+                <th>上传日期</th>
+                <th>删除</th>
+                <th>修改</th>
+            </tr>
+            
+        </table>
+        
+    </div>
+    <div class="pageDiv">
+            <span id="nowP" style="margin-left:-50px"></span><span id="tp"></span>
+            <button class="btn btn-s blue" onclick="forePage()">上一页</button><button class="btn btn-s blue" onclick="nextPage()">下一页</button>
+            <span>跳转至</span><input id="jeepPage" type="text" placeholder="页数" style="width:100px;"><span>页</span>
+            <button class="btn btn-s blue" id="jeep"> 跳转</button>
+    </div>
+</div>
+</div>
+<div class="foot"><a href="#">关于我们</a><a href="#">后台登陆</a></div>
+<h5 style="color:#333;margin-top:20px;float:left;margin-left:46.5%">--版权&reg叶超小分队--</h5>
+</div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/manager_tech.js"></script>
+<script src="js/changeMeunCss.js"></script>
+<script src="../js/prefixfree.min.js" ></script>
+</html>

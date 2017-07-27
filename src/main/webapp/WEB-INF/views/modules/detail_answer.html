@@ -1,0 +1,143 @@
+﻿
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>我们的渔技网</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/color.css">
+<link rel="stylesheet" href="css/money.css">
+<link rel="stylesheet" href="css/detail_answer.css">
+</head>
+<body  >
+<div class="content">
+<div class="logo">
+    <div class="myIcon"><span class="login1"><span class="login2"></span></span></div>
+    <h2>我们的渔技网</h2>
+    <h3>www.zhkugg.com</h3>
+</div>
+<div class="handler">
+    <ul>
+        <li><a href="index">网站首页</a></li>
+        <li><a href="#">广州渔业</a></li>
+        <li><a href="#">政务公开</a></li>
+        <li><a href="fastInfo_local.html">信息快递</a></li>
+        <li><a href="infoSaied.html">通知公告</a></li>
+        <li><a href="money.html">水产行情</a></li>
+        <li><a href="netInfo.html">站务信息</a></li>
+        <li><a href="needInfo.html">供求信息</a></li>
+        <li><a href="tech_breed.html">科技推广</a></li>
+        <li><a href="#">病防质检</a></li>
+        <li><a href="#">渔乐天堂</a></li>
+        <li><a href="#">休闲渔业</a></li>
+    </ul>
+</div>
+<div class="find">
+    <h4>本站搜索：</h4><p>关键字</p><input type="text" placeholder="键入关键词"><select><option>全站搜索</option></select>
+    <button class="btn blue">搜索</button>
+</div>
+<div class="newsFields">
+<div class="left">
+    <div class="leftMoney">
+        <div class="head"style="height:45px">
+            <div class="myIcon"style="margin-top:-0.2%"><span class="icon8"></span></div>
+            <h2 style="margin-top:1.3%">有问有答</h2>
+        </div>   
+        <div class="leftMoneyBottom">
+            <ul class="pointer">
+                <li  class="duck"><a href="question.html">我要质询</a></li>
+                <li  style="background:#1A7719"><a href="answer.html">回复查询</a></li>
+                <li class="duck"><a href="#">热点质询</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftCheck">
+        <div class="head"style="height:45px">
+            <div class="myIcon"style="margin-top:-0.2%"><span class="icon5"></span></div>
+            <h2 style="margin-top:1.3%">回复查询</h2>
+        </div>   
+        <div class="leftCheckBottom" style="font-size:15px">
+            <div style="margin-left:10%;margin-top:20%;font-size:15px">是否回复</div>
+            <div style="margin-left:10%;margin-top:20%">
+            是<input type="radio" name="yes"value="1" >
+            </div>
+            <div style="margin-top:20%">
+                否<input type="radio"name="yes"value="0">
+            </div>
+            <div style="margin-top:20px;margin-left:10%;">
+            <span style="font-size:15px">质询主题：</span>
+            </div>
+            <div style="margin-top:20px;">
+            <input type="text" placeholder="咨询主题" style="width:85%;" >
+            </div>
+           
+            <div>
+            <button class=" btn yellowGreen"style="width:60px;height:28px;margin-top:20px;margin-left:112px" onclick="">搜索</button>
+            <button class=" btn red"style="width:60px;height:28px" >重设</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="right">
+    <div class="head"style="height:45px">
+            <div class="myIcon"style="margin-top:-0.2%"><span class="icon8"></span></div>
+            <h2 style="margin-top:0.8%">回复查询</h2>
+            <a style="margin-left:35%;">当前位置：</a>
+            <a href="index">首页&nbsp&gt</a>
+            <a id="path1" href="question.html">有问有答&nbsp&gt</a>
+            <a id="path2" href="answer.html">回复查询&nbsp&gt</a>
+            <a id="path3" href="">问题详情</a>
+    </div>   
+    <div class="rightTable">
+        <div class="anBig">
+            <div class="anBig_header">
+                详细信息
+            </div>
+            <div class="anBig_aside">
+                <div class="anBig_aside_top">
+                    标题
+                </div>
+                <div class="anBig_aside_btm">
+                    内容
+                </div>
+            </div>
+            <div class="anBig_aside_r">
+                 <div class="anBig_aside_r_top" id="theme">
+                   
+                </div>
+                <div class="anBig_aside_r_btm" id="details">
+                    
+                </div>
+            </div>
+            <div class="anBig_header">
+                回复内容
+            </div>
+            <div class="anBig_aside" >
+                <div class="anBig_aside_btm"style="height:100%">
+                     回复内容
+                </div>
+            </div>
+            <div class="anBig_aside_r">
+                <div class="anBig_aside_r_btm"style="height:100%;padding:0px;overflow:scroll;" id="answer">
+                    <textarea style="width:100%;height:100%;resize:none;overflow:scroll;text-indent:40px;letter-spacing:3px;">
+
+                    </textarea>
+                </div>
+            </div>
+            <span id="flag">
+            <button class="cls btn blue"  style="width:100px;height:35px;margin-top:5px;" onclick="save()">提交</button>
+            <button class="cls btn gray" style="width:100px;height:35px" onclick="reset()">重设</button>
+            </span>
+        </div>
+    </div>
+   
+</div>
+</div>
+<div class="foot"><a href="#">关于我们</a><a href="#">后台登陆</a></div>
+<h5 style="color:#333;margin-top:20px;float:left;margin-left:46.5%">--版权&reg叶超小分队--</h5>
+</div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/detail_answer.js"></script>
+<script src="js/prefixfree.min.js" ></script>
+</html>

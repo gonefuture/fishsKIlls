@@ -1,0 +1,56 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+<title>用户登录</title>
+<link rel="stylesheet" href="css/userLogin.css">
+<link rel="stylesheet" href="css/color.css">
+<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/loginPage_js.js"></script>
+</head>
+
+<body  class="coverImage">
+<div class="myIcon"><span class="home1"><span class="home2"></span></span></div><h2 style="color:#fff">渔技网后台登陆</h2>
+<div class="loginDiv">
+	<h5 id="badTips"style="color:#f00"></h5>
+	<h4 id="goodTips"style="color:#fff;">后台登陆/Login</h4>
+	<form role="form" action="/fishskills/admin/login" method="post">
+		<div class="input-group">
+			<div class="icon-le"><embed src="image/user.svg" width="100%" height="100%" type="image/svg+xml" /></div>
+			<input type="text" class="cls input-ri" id="cellphone"  name="adminid" placeholder=" 手机号">
+			<div id="cellError"  style="margin-left:10px;margin-top:10px;float:left;width:25px;height:25px;border-radius:50%;display:none;background:#f00" ><embed src="image/close.svg" width="100%" height="100%" type="image/svg+xml" /></div>
+			<div id="cellRight" class="green" style="margin-left:10px;margin-top:10px;float:left;width:25px;height:25px;border-radius:50%;display:none;" ><embed src="image/right.svg" width="100%" height="100%" type="image/svg+xml" /></div>
+		</div>
+		
+		<div class="input-group">
+			<div class="icon-le"><embed src="image/passw.svg" width="100%" height="100%" type="image/svg+xml" /></div>
+			<input type="password" class="cls input-ri" id="password" name="password" placeholder="密码">
+		</div>
+	
+		
+		<div class="input-group" >
+			<div class="icon-le"><embed src="image/verifty.svg" width="100%" height="100%" type="image/svg+xml" /></div>
+			<input type="text" class="cls input-ri" id="getCode" name="verifyCode" style="border-radius:0px 0px 0px 0px;width:35%;"placeholder=" 验证码">
+			<div id="changeVerifyCode"style="margin-left:10px;float:left" >
+			<img  id="verifyCode" src="/fishskills/tools/VerifyCodeServlet" style="width:100px;height:40px"alt="验证码" >
+			</div>
+			<div id="codeError" style="margin-left:10px;margin-top:10px;float:left;width:25px;height:25px;border-radius:50%;display:none;background:#f00" ><embed src="image/close.svg" width="100%" height="100%" type="image/svg+xml" /></div>
+			<div id="codeRight" class="green" style="margin-left:10px;margin-top:10px;float:left;width:25px;height:25px;border-radius:50%;display:none;" ><embed src="image/right.svg" width="100%" height="100%" type="image/svg+xml" /></div>
+		</div>
+
+		<div class="input-group">
+		<button type="submit" class=" cls button3 " id="submits">Login</button>
+		<button id="reset" class="cls button " ><span>reset</span></button>
+		</div>
+		
+		<div class="input-group">
+			<a  id="findPassw" href="findPassw.html"  class="link" target="_blank" >forgetPassword?</a>
+		</div>
+	</form>
+	
+</div>
+
+<h5 style="color:#fff;margin-top:12%;text-align:center">--版权&reg叶超小分队--</h5>
+</body>
+</html>
